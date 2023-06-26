@@ -1,126 +1,83 @@
 package mathmatchgame;
 
+import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
+import javafx.scene.control.Alert;
 import javafx.scene.control.Button;
-
-import java.net.URL;
+import javafx.scene.control.PasswordField;
+import javafx.scene.control.TextField;
+import javafx.stage.Stage;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
 import java.util.ArrayList;
-import java.util.Collections;
 import java.util.List;
+
+import java.io.IOException;
+import java.net.URL;
 import java.util.ResourceBundle;
 
 public class VentanaController implements Initializable {
-    @FXML
-    private Button button1;
 
     @FXML
-    private Button button2;
+    private Button loginButton;
 
     @FXML
-    private Button button3;
+    private TextField textField;
 
     @FXML
-    private Button button4;
+    private PasswordField passwordField;
 
-    @FXML
-    private Button button5;
-
-    @FXML
-    private Button button6;
-
-    private List<Button> buttons;
-    private int score;
-    private int totalMatches;
-    private int selectedCardIndex;
+    private List<User> userList;
 
     @Override
     public void initialize(URL url, ResourceBundle rb) {
-        // Inicializar la lista de botones
-        buttons = new ArrayList<>();
-
-        // Inicializar el puntaje y el contador de pares encontrados
-        score = 0;
-        totalMatches = 0;
-
-        // Establecer el índice de la carta seleccionada a -1 (ninguna carta seleccionada)
-        selectedCardIndex = -1;
-
-        // Agregar los botones a la lista de botones
-        buttons.add(button1);
-        buttons.add(button2);
-        buttons.add(button3);
-        buttons.add(button4);
-        buttons.add(button5);
-        buttons.add(button6);
-
-        // Inicializar el juego
-        initializeGame();
+        // Inicializar la lista de usuarios
+        userList = new ArrayList<>();
+        userList.add(new User("luis", "123"));
+        userList.add(new User("alejandro", "456"));
     }
 
-    private void initializeGame() {
-        // Lista de operaciones
-        List<String> operations = new ArrayList<>();
-        operations.add("2 + 3");
-        operations.add("4 * 5");
-        operations.add("8 / 2");
-        operations.add("6 - 1");
-        operations.add("7 * 3");
-        operations.add("10 / 2");
+    @FXML
+    private void handleLoginButtonClick(ActionEvent event) {
 
-        // Duplicar las operaciones para formar pares
-        List<String> allOperations = new ArrayList<>(operations);
-        allOperations.addAll(operations);
+        String username = textField.getText();
+        String password = passwordField.getText();
 
-        // Mezclar las operaciones
-        Collections.shuffle(allOperations);
 
-        // Asignar cada operación a un botón
-        for (int i = 0; i < buttons.size(); i++) {
-            Button button = buttons.get(i);
-            button.setText(allOperations.get(i));
-            button.setOnAction(event -> handleCardClick(button));
+        if (verifyCredentials(username, password)) {
+
+        Stage currentStage = (Stage) loginButton.getScene().getWindow();
+        currentStage.close();
+
+            try {
+                Stage newStage = new Stage();
+                Parent root = FXMLLoader.load(getClass().getResource("Niveles.fxml"));
+                Scene scene = new Scene(root);
+                newStage.setScene(scene);
+                newStage.show();
+            } catch (IOException e) {
+                e.printStackTrace();
+            };
+
+        } else {
+            // Las credenciales son incorrectas, mostrar una alerta
+            Alert alert = new Alert(Alert.AlertType.ERROR);
+            alert.setTitle("Error de inicio de sesión");
+            alert.setHeaderText(null);
+            alert.setContentText("Credenciales incorrectas. Por favor, intente nuevamente.");
+            alert.showAndWait();
+            // Credenciales inválidas, mostrar un mensaje de error
+            System.out.println("Credenciales inválidas. Inténtalo de nuevo.");
         }
     }
-
-    private void handleCardClick(Button button) {
-        // Obtener el índice de la carta seleccionada
-        int cardIndex = buttons.indexOf(button);
-
-        // Verificar si el botón está habilitado
-        if (!button.isDisable()) {
-            if (selectedCardIndex == -1) {
-                // Primera carta volteada
-                selectedCardIndex = cardIndex;
-                button.setDisable(true);
-            } else {
-                // Segunda carta volteada
-                Button selectedCard = buttons.get(selectedCardIndex);
-
-                if (button.getText().equals(selectedCard.getText())) {
-                    // Ambas cartas son iguales (se encontró una pareja)
-                    button.setDisable(true);
-                    selectedCard.setDisable(true);
-                    totalMatches++;
-                    score += 10;
-                } else {
-                    // Ambas cartas son diferentes (no hay pareja)
-                    button.setDisable(false);
-                    selectedCard.setDisable(false);
-                    score -= 2;
-                }
-
-                // Restablecer el índice de la carta seleccionada
-                selectedCardIndex = -1;
-            }
-
-            System.out.println("Puntuación actual: " + score);
-            System.out.println();
-
-            if (totalMatches == 3) {
-                System.out.println("¡Felicitaciones! Has encontrado todos los pares.");
-                System.out.println("Tu puntuación final es: " + score);
+    private boolean verifyCredentials(String username, String password) {
+        for (User user : userList) {
+            if (user.getUsername().equals(username) && user.getPassword().equals(password)) {
+                return true; // Las credenciales son válidas
             }
         }
+        return false; // Las credenciales son inválidas
     }
 }
