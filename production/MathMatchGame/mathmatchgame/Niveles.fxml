@@ -15,9 +15,9 @@
                <Image url="@../Image/matematicas-1280x720.jpg" />
            </image>
        </ImageView>
-      <Pane layoutX="24.0" layoutY="29.0" prefHeight="663.0" prefWidth="1233.0" style="-fx-background-color: #39d0f1; -fx-background-radius: 40px;">
+      <Pane layoutX="24.0" layoutY="29.0" prefHeight="663.0" prefWidth="1233.0" style="-fx-background-color: #39d0f1d3; -fx-background-radius: 40px;">
          <children>
-            <Pane layoutX="11.0" layoutY="47.0" prefHeight="602.0" prefWidth="1211.0" style="-fx-background-color: #ffffffb3; -fx-background-radius: 35px;">
+            <Pane layoutX="11.0" layoutY="47.0" prefHeight="602.0" prefWidth="1211.0" style="-fx-background-color: #ffffffd3; -fx-background-radius: 35px;">
                <children>
                   <ImageView fitHeight="69.0" fitWidth="41.0" layoutX="471.0" layoutY="144.0" pickOnBounds="true" preserveRatio="true" rotate="26.6">
                      <image>
@@ -175,11 +175,11 @@
                      <Font name="Lohit Gujarati" size="35.0" />
                  </font>
              </Label>
-            <Label layoutX="969.0" layoutY="-5.0" text="MATHMATCH">
+            <Button fx:id="exit" onAction="#salirLogin" layoutX="1069.0" layoutY="-17.0" mnemonicParsing="false" style="-fx-background-color: transparent;" text="EXIT">
                <font>
                   <Font name="Lohit Gujarati" size="35.0" />
                </font>
-            </Label>
+            </Button>
          </children>
       </Pane>
    </children>

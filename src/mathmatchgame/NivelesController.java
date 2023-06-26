@@ -57,6 +57,21 @@ public class NivelesController implements Initializable {
         };
     }
     @FXML
+    private void salirLogin(ActionEvent event){
+        Stage currentStage = (Stage) Button1.getScene().getWindow();
+        currentStage.close();
+
+        try {
+            Stage newStage = new Stage();
+            Parent root = FXMLLoader.load(getClass().getResource("Ventana.fxml"));
+            Scene scene = new Scene(root);
+            newStage.setScene(scene);
+            newStage.show();
+        } catch (IOException e) {
+            e.printStackTrace();
+        };
+    }
+    @FXML
     private void onMouseEntered(MouseEvent event) {
         Button1.setStyle("-fx-background-color: #1f7c8a;");
     }
