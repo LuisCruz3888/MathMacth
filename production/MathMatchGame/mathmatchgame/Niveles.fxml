@@ -19,52 +19,157 @@
          <children>
             <Pane layoutX="11.0" layoutY="47.0" prefHeight="602.0" prefWidth="1211.0" style="-fx-background-color: #ffffffb3; -fx-background-radius: 35px;">
                <children>
-                   <Button layoutX="117.0" layoutY="81.0" mnemonicParsing="false" prefHeight="70.0" prefWidth="141.0" style="-fx-background-radius: 50%; -fx-background-color: #39d0f1; -fx-effect: dropshadow(gaussian, rgba(255,255,255,0.5), 0, 0, 0, 0);" text="1" textFill="WHITE">
+                  <ImageView fitHeight="69.0" fitWidth="41.0" layoutX="471.0" layoutY="144.0" pickOnBounds="true" preserveRatio="true" rotate="26.6">
+                     <image>
+                        <Image url="@../Image/piedras.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="69.0" fitWidth="41.0" layoutX="272.0" layoutY="85.0" pickOnBounds="true" preserveRatio="true" rotate="-90.0">
+                     <image>
+                        <Image url="@../Image/piedras.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="69.0" fitWidth="41.0" layoutX="334.0" layoutY="85.0" pickOnBounds="true" preserveRatio="true" rotate="-90.0">
+                     <image>
+                        <Image url="@../Image/piedras.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="69.0" fitWidth="41.0" layoutX="395.0" layoutY="86.0" pickOnBounds="true" preserveRatio="true" rotate="-90.0">
+                     <image>
+                        <Image url="@../Image/piedras.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="69.0" fitWidth="41.0" layoutX="447.0" layoutY="93.0" pickOnBounds="true" preserveRatio="true" rotate="-84.3">
+                     <image>
+                        <Image url="@../Image/piedras.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="69.0" fitWidth="41.0" layoutX="562.0" layoutY="177.0" pickOnBounds="true" preserveRatio="true" rotate="71.6">
+                     <image>
+                        <Image url="@../Image/piedras.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="69.0" fitWidth="41.0" layoutX="614.0" layoutY="165.0" pickOnBounds="true" preserveRatio="true" rotate="73.3">
+                     <image>
+                        <Image url="@../Image/piedras.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="69.0" fitWidth="41.0" layoutX="665.0" layoutY="162.0" pickOnBounds="true" preserveRatio="true" rotate="-97.1">
+                     <image>
+                        <Image url="@../Image/piedras.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="69.0" fitWidth="41.0" layoutX="849.0" layoutY="194.0" pickOnBounds="true" preserveRatio="true" rotate="-60.3">
+                     <image>
+                        <Image url="@../Image/piedras.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="69.0" fitWidth="41.0" layoutX="900.0" layoutY="228.0" pickOnBounds="true" preserveRatio="true" rotate="-59.0">
+                     <image>
+                        <Image url="@../Image/piedras.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="69.0" fitWidth="41.0" layoutX="928.0" layoutY="291.0" pickOnBounds="true" preserveRatio="true" rotate="50.5">
+                     <image>
+                        <Image url="@../Image/piedras.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="69.0" fitWidth="41.0" layoutX="877.0" layoutY="312.0" pickOnBounds="true" preserveRatio="true" rotate="59.0">
+                     <image>
+                        <Image url="@../Image/piedras.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="69.0" fitWidth="41.0" layoutX="826.0" layoutY="330.0" pickOnBounds="true" preserveRatio="true" rotate="81.6">
+                     <image>
+                        <Image url="@../Image/piedras.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="69.0" fitWidth="41.0" layoutX="603.0" layoutY="376.0" pickOnBounds="true" preserveRatio="true" rotate="68.7">
+                     <image>
+                        <Image url="@../Image/piedras.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="69.0" fitWidth="41.0" layoutX="544.0" layoutY="403.0" pickOnBounds="true" preserveRatio="true" rotate="69.4">
+                     <image>
+                        <Image url="@../Image/piedras.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="69.0" fitWidth="41.0" layoutX="339.0" layoutY="386.0" pickOnBounds="true" preserveRatio="true" rotate="-63.4">
+                     <image>
+                        <Image url="@../Image/piedras.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="69.0" fitWidth="41.0" layoutX="287.0" layoutY="363.0" pickOnBounds="true" preserveRatio="true" rotate="-74.1">
+                     <image>
+                        <Image url="@../Image/piedras.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="69.0" fitWidth="41.0" layoutX="167.0" layoutY="392.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Image/piedras.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="69.0" fitWidth="41.0" layoutX="505.0" layoutY="197.0" pickOnBounds="true" preserveRatio="true" rotate="-116.6">
+                     <image>
+                        <Image url="@../Image/piedras.png" />
+                     </image>
+                  </ImageView>
+                  <Pane layoutX="105.0" layoutY="91.0" prefHeight="74.0" prefWidth="165.0" style="-fx-background-color: #ffffff; -fx-background-radius: 50%;" />
+                  <Pane layoutX="469.0" layoutY="89.0" prefHeight="74.0" prefWidth="165.0" style="-fx-background-color: #ffffff; -fx-background-radius: 50%;" />
+                  <Pane layoutX="93.0" layoutY="464.0" prefHeight="74.0" prefWidth="165.0" style="-fx-background-color: #ffffff; -fx-background-radius: 50%;" />
+                  <Pane layoutX="377.0" layoutY="418.0" prefHeight="74.0" prefWidth="165.0" style="-fx-background-color: #ffffff; -fx-background-radius: 50%;" />
+                  <Pane layoutX="117.0" layoutY="335.0" prefHeight="74.0" prefWidth="165.0" style="-fx-background-color: #ffffff; -fx-background-radius: 50%;" />
+                  <Pane layoutX="658.0" layoutY="345.0" prefHeight="74.0" prefWidth="165.0" style="-fx-background-color: #ffffff; -fx-background-radius: 50%;" />
+                  <Pane layoutX="348.0" layoutY="204.0" prefHeight="74.0" prefWidth="165.0" style="-fx-background-color: #ffffff; -fx-background-radius: 50%;" />
+                  <Pane layoutX="936.0" layoutY="250.0" prefHeight="74.0" prefWidth="165.0" style="-fx-background-color: #ffffff; -fx-background-radius: 50%;" />
+                  <Pane layoutX="717.0" layoutY="149.0" prefHeight="74.0" prefWidth="165.0" style="-fx-background-color: #ffffff; -fx-background-radius: 50%;" />
+                   <Button fx:id="Button1" layoutX="117.0" layoutY="81.0" mnemonicParsing="false" onAction="#IngresoNivel1" prefHeight="70.0" prefWidth="141.0" styleClass="custom-button" stylesheets="@ventana.css" text="1" textFill="WHITE">
                        <font>
                            <Font name="Lohit Gujarati" size="31.0" />
                        </font>
                    </Button>
-                  <Button layoutX="564.0" layoutY="53.0" mnemonicParsing="false" prefHeight="70.0" prefWidth="141.0" style="-fx-background-radius: 50%; -fx-background-color: #39d0f1; -fx-effect: dropshadow(gaussian, rgba(255,255,255,0.5), 0, 0, 0, 0);" text="2" textFill="WHITE">
-                     <font>
-                        <Font name="Lohit Gujarati" size="31.0" />
-                     </font>
-                  </Button>
-                  <Button layoutX="342.0" layoutY="187.0" mnemonicParsing="false" prefHeight="70.0" prefWidth="141.0" style="-fx-background-radius: 50%; -fx-background-color: #39d0f1; -fx-effect: dropshadow(gaussian, rgba(255,255,255,0.5), 0, 0, 0, 0);" text="3" textFill="WHITE">
-                     <font>
-                        <Font name="Lohit Gujarati" size="31.0" />
-                     </font>
-                  </Button>
-                  <Button layoutX="97.0" layoutY="447.0" mnemonicParsing="false" prefHeight="70.0" prefWidth="141.0" style="-fx-background-radius: 50%; -fx-background-color: #39d0f1; -fx-effect: dropshadow(gaussian, rgba(255,255,255,0.5), 0, 0, 0, 0);" text="9" textFill="WHITE">
-                     <font>
-                        <Font name="Lohit Gujarati" size="31.0" />
-                     </font>
-                  </Button>
-                  <Button layoutX="211.0" layoutY="325.0" mnemonicParsing="false" prefHeight="70.0" prefWidth="141.0" style="-fx-background-radius: 50%; -fx-background-color: #39d0f1; -fx-effect: dropshadow(gaussian, rgba(255,255,255,0.5), 0, 0, 0, 0);" text="8" textFill="WHITE">
-                     <font>
-                        <Font name="Lohit Gujarati" size="31.0" />
-                     </font>
-                  </Button>
-                  <Button layoutX="930.0" layoutY="301.0" mnemonicParsing="false" prefHeight="70.0" prefWidth="141.0" style="-fx-background-radius: 50%; -fx-background-color: #39d0f1; -fx-effect: dropshadow(gaussian, rgba(255,255,255,0.5), 0, 0, 0, 0);" text="5" textFill="WHITE">
-                     <font>
-                        <Font name="Lohit Gujarati" size="31.0" />
-                     </font>
-                  </Button>
-                  <Button layoutX="892.0" layoutY="139.0" mnemonicParsing="false" prefHeight="70.0" prefWidth="141.0" style="-fx-background-radius: 50%; -fx-background-color: #39d0f1; -fx-effect: dropshadow(gaussian, rgba(255,255,255,0.5), 0, 0, 0, 0);" text="4" textFill="WHITE">
-                     <font>
-                        <Font name="Lohit Gujarati" size="31.0" />
-                     </font>
-                  </Button>
-                  <Button layoutX="751.0" layoutY="427.0" mnemonicParsing="false" prefHeight="70.0" prefWidth="141.0" style="-fx-background-radius: 50%; -fx-background-color: #39d0f1; -fx-effect: dropshadow(gaussian, rgba(255,255,255,0.5), 0, 0, 0, 0);" text="6" textFill="WHITE">
-                     <font>
-                        <Font name="Lohit Gujarati" size="31.0" />
-                     </font>
-                  </Button>
-                  <Button layoutX="493.0" layoutY="336.0" mnemonicParsing="false" prefHeight="70.0" prefWidth="141.0" style="-fx-background-radius: 50%; -fx-background-color: #39d0f1; -fx-effect: dropshadow(gaussian, rgba(255,255,255,0.5), 0, 0, 0, 0);" text="7" textFill="WHITE">
-                     <font>
-                        <Font name="Lohit Gujarati" size="31.0" />
-                     </font>
-                  </Button>
-               </children></Pane>
+                   <Button fx:id="Button2" layoutX="482.0" layoutY="79.0" mnemonicParsing="false" onAction="#IngresoNivel1" prefHeight="70.0" prefWidth="141.0" styleClass="custom-button" stylesheets="@ventana.css" text="2" textFill="WHITE">
+                       <font>
+                           <Font name="Lohit Gujarati" size="31.0" />
+                       </font>
+                   </Button>
+                   <Button fx:id="Button3" layoutX="360.0" layoutY="196.0" mnemonicParsing="false" onAction="#IngresoNivel1" prefHeight="70.0" prefWidth="141.0" styleClass="custom-button" stylesheets="@ventana.css" text="3" textFill="WHITE">
+                       <font>
+                           <Font name="Lohit Gujarati" size="31.0" />
+                       </font>
+                   </Button>
+                   <Button fx:id="Button4" layoutX="729.0" layoutY="140.0" mnemonicParsing="false" onAction="#IngresoNivel1" prefHeight="70.0" prefWidth="141.0" styleClass="custom-button" stylesheets="@ventana.css" text="4" textFill="WHITE">
+                       <font>
+                           <Font name="Lohit Gujarati" size="31.0" />
+                       </font>
+                   </Button>
+                   <Button fx:id="Button5" layoutX="948.0" layoutY="243.0" mnemonicParsing="false" onAction="#IngresoNivel1" prefHeight="70.0" prefWidth="141.0" styleClass="custom-button" stylesheets="@ventana.css" text="5" textFill="WHITE">
+                       <font>
+                           <Font name="Lohit Gujarati" size="31.0" />
+                       </font>
+                   </Button>
+                   <Button fx:id="Button6" layoutX="670.0" layoutY="335.0" mnemonicParsing="false" onAction="#IngresoNivel1" prefHeight="70.0" prefWidth="141.0" styleClass="custom-button" stylesheets="@ventana.css" text="6" textFill="WHITE">
+                       <font>
+                           <Font name="Lohit Gujarati" size="31.0" />
+                       </font>
+                   </Button>
+                   <Button fx:id="Button7" layoutX="129.0" layoutY="326.0" mnemonicParsing="false" onAction="#IngresoNivel1" prefHeight="70.0" prefWidth="141.0" styleClass="custom-button" stylesheets="@ventana.css" text="7" textFill="WHITE">
+                       <font>
+                           <Font name="Lohit Gujarati" size="31.0" />
+                       </font>
+                   </Button>
+                   <Button fx:id="Button8" layoutX="390.0" layoutY="408.0" mnemonicParsing="false" onAction="#IngresoNivel1" prefHeight="70.0" prefWidth="141.0" styleClass="custom-button" stylesheets="@ventana.css" text="8" textFill="WHITE">
+                       <font>
+                           <Font name="Lohit Gujarati" size="31.0" />
+                       </font>
+                   </Button>
+                   <Button fx:id="Button9" layoutX="105.0" layoutY="453.0" mnemonicParsing="false" onAction="#IngresoNivel1" prefHeight="70.0" prefWidth="141.0" styleClass="custom-button" stylesheets="@ventana.css" text="9" textFill="WHITE">
+                       <font>
+                           <Font name="Lohit Gujarati" size="31.0" />
+                       </font>
+                   </Button>
+               </children>
+            </Pane>
              <Label layoutX="31.0" layoutY="-5.0" text="MATHMATCH">
                  <font>
                      <Font name="Lohit Gujarati" size="35.0" />

@@ -48,3 +48,20 @@
     -fx-background-color: #39d0f1; /* Cambia el color de fondo al pasar el mouse por encima */
     -fx-text-fill: #FFFFFF; /* Cambia el color del texto al pasar el mouse por encima */
 }
+
+.custom-button {
+    -fx-background-radius: 50%;
+    -fx-background-color: #39d0f1;
+    -fx-effect: dropshadow(gaussian, rgba(255,255,255,0.5), 0, 0, 0, 0);
+    -fx-transition: background-color 0.3s;
+}
+
+.custom-button:hover {
+    -fx-background-color: #1f7c8a;
+}
+
+.custom-button:pressed {
+    -fx-background-color: #0d3c44;
+    -fx-effect: dropshadow(gaussian, rgba(255,255,255,0.5), 0, 0, 0, 4);
+    -fx-transition: none;
+}
