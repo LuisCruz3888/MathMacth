@@ -24,7 +24,7 @@
                            <Image url="@../Image/Nivel1/1.png" />
                        </image>
                    </ImageView>
-                  <ImageView fx:id="imageView1" onMouseClicked="#ocultarImagen1" fitHeight="234.0" fitWidth="195.0" layoutX="157.0" layoutY="54.0" pickOnBounds="true" preserveRatio="true">
+                  <ImageView fx:id="imageView1" fitHeight="234.0" fitWidth="195.0" layoutX="157.0" layoutY="54.0" onMouseClicked="#ocultarImagen1" pickOnBounds="true" preserveRatio="true">
                       <image>
                           <Image url="@../Image/Nivel1/postal_el_signo_de_interrogacion-rb44ceab64de84ebca0e1862fd08f1e01_ucbjp_307.png" />
                       </image>
@@ -39,7 +39,7 @@
                            <Image url="@../Image/Nivel1/2.png" />
                        </image>
                    </ImageView>
-                  <ImageView fx:id="imageView2" onMouseClicked="#ocultarImagen2" fitHeight="234.0" fitWidth="195.0" layoutX="397.0" layoutY="54.0" pickOnBounds="true" preserveRatio="true">
+                  <ImageView fx:id="imageView2" fitHeight="234.0" fitWidth="195.0" layoutX="397.0" layoutY="54.0" onMouseClicked="#ocultarImagen2" pickOnBounds="true" preserveRatio="true">
                      <image>
                         <Image url="@../Image/Nivel1/postal_el_signo_de_interrogacion-rb44ceab64de84ebca0e1862fd08f1e01_ucbjp_307.png" />
                      </image>
@@ -54,7 +54,7 @@
                            <Image url="@../Image/Nivel1/3.png" />
                        </image>
                    </ImageView>
-                  <ImageView fx:id="imageView3" onMouseClicked="#ocultarImagen3" fitHeight="234.0" fitWidth="195.0" layoutX="637.0" layoutY="54.0" pickOnBounds="true" preserveRatio="true">
+                  <ImageView fx:id="imageView3" fitHeight="234.0" fitWidth="195.0" layoutX="637.0" layoutY="54.0" onMouseClicked="#ocultarImagen3" pickOnBounds="true" preserveRatio="true">
                      <image>
                         <Image url="@../Image/Nivel1/postal_el_signo_de_interrogacion-rb44ceab64de84ebca0e1862fd08f1e01_ucbjp_307.png" />
                      </image>
@@ -69,7 +69,7 @@
                            <Image url="@../Image/Nivel1/4.png" />
                        </image>
                    </ImageView>
-                  <ImageView fx:id="imageView4" onMouseClicked="#ocultarImagen4" fitHeight="234.0" fitWidth="195.0" layoutX="877.0" layoutY="54.0" pickOnBounds="true" preserveRatio="true">
+                  <ImageView fx:id="imageView4" fitHeight="234.0" fitWidth="195.0" layoutX="877.0" layoutY="54.0" onMouseClicked="#ocultarImagen4" pickOnBounds="true" preserveRatio="true">
                      <image>
                         <Image url="@../Image/Nivel1/postal_el_signo_de_interrogacion-rb44ceab64de84ebca0e1862fd08f1e01_ucbjp_307.png" />
                      </image>
@@ -84,7 +84,7 @@
                            <Image url="@../Image/Nivel1/5.png" />
                        </image>
                    </ImageView>
-                  <ImageView fx:id="imageView5" onMouseClicked="#ocultarImagen5" fitHeight="234.0" fitWidth="195.0" layoutX="157.0" layoutY="333.0" pickOnBounds="true" preserveRatio="true">
+                  <ImageView fx:id="imageView5" fitHeight="234.0" fitWidth="195.0" layoutX="157.0" layoutY="333.0" onMouseClicked="#ocultarImagen5" pickOnBounds="true" preserveRatio="true">
                      <image>
                         <Image url="@../Image/Nivel1/postal_el_signo_de_interrogacion-rb44ceab64de84ebca0e1862fd08f1e01_ucbjp_307.png" />
                      </image>
@@ -99,7 +99,7 @@
                            <Image url="@../Image/Nivel1/6.png" />
                        </image>
                    </ImageView>
-                  <ImageView fx:id="imageView6" onMouseClicked="#ocultarImagen6" fitHeight="234.0" fitWidth="195.0" layoutX="397.0" layoutY="333.0" pickOnBounds="true" preserveRatio="true">
+                  <ImageView fx:id="imageView6" fitHeight="234.0" fitWidth="195.0" layoutX="397.0" layoutY="333.0" onMouseClicked="#ocultarImagen6" pickOnBounds="true" preserveRatio="true">
                      <image>
                         <Image url="@../Image/Nivel1/postal_el_signo_de_interrogacion-rb44ceab64de84ebca0e1862fd08f1e01_ucbjp_307.png" />
                      </image>
@@ -114,7 +114,7 @@
                            <Image url="@../Image/Nivel1/7.png" />
                        </image>
                    </ImageView>
-                  <ImageView fx:id="imageView7" onMouseClicked="#ocultarImagen7" fitHeight="234.0" fitWidth="195.0" layoutX="637.0" layoutY="333.0" pickOnBounds="true" preserveRatio="true">
+                  <ImageView fx:id="imageView7" fitHeight="234.0" fitWidth="195.0" layoutX="637.0" layoutY="333.0" onMouseClicked="#ocultarImagen7" pickOnBounds="true" preserveRatio="true">
                      <image>
                         <Image url="@../Image/Nivel1/postal_el_signo_de_interrogacion-rb44ceab64de84ebca0e1862fd08f1e01_ucbjp_307.png" />
                      </image>
@@ -129,7 +129,7 @@
                            <Image url="@../Image/Nivel1/8.png" />
                        </image>
                    </ImageView>
-                  <ImageView fx:id="imageView8" onMouseClicked="#ocultarImagen8" fitHeight="234.0" fitWidth="195.0" layoutX="877.0" layoutY="333.0" pickOnBounds="true" preserveRatio="true">
+                  <ImageView fx:id="imageView8" fitHeight="234.0" fitWidth="195.0" layoutX="877.0" layoutY="333.0" onMouseClicked="#ocultarImagen8" pickOnBounds="true" preserveRatio="true">
                      <image>
                         <Image url="@../Image/Nivel1/postal_el_signo_de_interrogacion-rb44ceab64de84ebca0e1862fd08f1e01_ucbjp_307.png" />
                      </image>
@@ -139,6 +139,11 @@
                            <Image url="@../Image/Nivel1/64.png" />
                        </image>
                    </ImageView>
+                  <ImageView fx:id="win" fitHeight="639.0" fitWidth="546.0" layoutX="318.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Image/Nivel1/pngtree-comic-speech-bubbles-with-text-you-win-png-image_4667123.png" />
+                     </image>
+                  </ImageView>
                </children></Pane>
              <Label layoutX="37.0" text="MATHMATCH">
                  <font>

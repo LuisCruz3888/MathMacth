@@ -54,6 +54,8 @@ public class Nivel1Controller implements Initializable {
     private ImageView resultado7;
     @FXML
     private ImageView resultado8;
+    @FXML
+    private ImageView win;
 
     // Variables de control
     private ImageView lastClickedImage;
@@ -164,6 +166,8 @@ public class Nivel1Controller implements Initializable {
                     // El juego ha sido completado
                     // Realizar alguna acción, como mostrar un mensaje de éxito
                     System.out.println("¡Has completado el juego!");
+                    win.setVisible(true);
+
                 }
             } else {
                 // Las imágenes no forman un par
@@ -195,6 +199,7 @@ public class Nivel1Controller implements Initializable {
         resultado6.setVisible(false);
         resultado7.setVisible(false);
         resultado8.setVisible(false);
+        win.setVisible(false);
 
         // Inicializar las parejas de imágenes
         imagePairs = new HashMap<>();
