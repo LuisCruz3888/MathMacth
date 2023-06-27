@@ -19,6 +19,7 @@ import java.util.Map;
 
 public class Nivel1Controller implements Initializable {
 
+    // Declaración de los elementos del FXML
     @FXML
     private Button atras;
     @FXML
@@ -54,60 +55,71 @@ public class Nivel1Controller implements Initializable {
     @FXML
     private ImageView resultado8;
 
+    // Variables de control
     private ImageView lastClickedImage;
     private int pairsFound;
     private int totalPairs;
 
+    // Evento para ocultar la imagen 1 al hacer clic
     @FXML
     private void ocultarImagen1(MouseEvent event) {
         ocultarImagen(imageView1);
         imageView1.setVisible(false);
     }
 
+    // Evento para ocultar la imagen 2 al hacer clic
     @FXML
     private void ocultarImagen2(MouseEvent event) {
         ocultarImagen(imageView2);
         imageView2.setVisible(false);
     }
 
+    // Evento para ocultar la imagen 3 al hacer clic
     @FXML
     private void ocultarImagen3(MouseEvent event) {
         ocultarImagen(imageView3);
         imageView3.setVisible(false);
     }
 
+    // Evento para ocultar la imagen 4 al hacer clic
     @FXML
     private void ocultarImagen4(MouseEvent event) {
         ocultarImagen(imageView4);
         imageView4.setVisible(false);
     }
 
+    // Evento para ocultar la imagen 5 al hacer clic
     @FXML
     private void ocultarImagen5(MouseEvent event) {
         ocultarImagen(imageView5);
         imageView5.setVisible(false);
     }
 
+    // Evento para ocultar la imagen 6 al hacer clic
     @FXML
     private void ocultarImagen6(MouseEvent event) {
         ocultarImagen(imageView6);
         imageView6.setVisible(false);
     }
 
+    // Evento para ocultar la imagen 7 al hacer clic
     @FXML
     private void ocultarImagen7(MouseEvent event) {
         ocultarImagen(imageView7);
         imageView7.setVisible(false);
     }
 
+    // Evento para ocultar la imagen 8 al hacer clic
     @FXML
     private void ocultarImagen8(MouseEvent event) {
         ocultarImagen(imageView8);
         imageView8.setVisible(false);
     }
 
+    // Mapa que almacena las parejas de imágenes
     private Map<ImageView, ImageView> imagePairs;
 
+    // Método para ocultar una imagen y verificar si forma una pareja
     private void ocultarImagen(ImageView imageView) {
         if (lastClickedImage == null) {
             // Primera imagen clicada
@@ -162,16 +174,19 @@ public class Nivel1Controller implements Initializable {
         }
     }
 
-
+    // Método para verificar si dos imágenes forman una pareja
     private boolean sonPareja(ImageView image1, ImageView image2) {
         return imagePairs.containsKey(image1) && imagePairs.get(image1) == image2;
     }
 
     @Override
     public void initialize(URL url, ResourceBundle rb) {
-        // TODO: Implementar la inicialización del controlador
+        // Inicialización del controlador
+
+        // Cantidad total de parejas en el juego
         totalPairs = 4;
 
+        // Ocultar los resultados
         resultado1.setVisible(false);
         resultado2.setVisible(false);
         resultado3.setVisible(false);
@@ -191,11 +206,9 @@ public class Nivel1Controller implements Initializable {
         imagePairs.put(imageView7, imageView2);
         imagePairs.put(imageView5, imageView3);
         imagePairs.put(imageView8, imageView6);
-
-
-
     }
 
+    // Evento para volver a la pantalla de selección de niveles
     @FXML
     private void volverNiveles(ActionEvent event) {
         Stage currentStage = (Stage) atras.getScene().getWindow();
